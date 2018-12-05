@@ -1,0 +1,120 @@
+body {
+  background-image: url(bg.jpeg);
+  background-repeat: repeat;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* midle*/
+.midlecolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* add card effect */
+.card {
+  /*background-image:url(inner.jpeg);
+    background-repeat:repeat;*/
+  background-color: #8B8386;
+  width: 600px;
+  height: 450px;
+  margin-top: 80px;
+}
+
+/* navigation bar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+a:focus {
+  background-color: #4CAF50;
+}
+
+.cardleft {
+  width: 200px;
+  float: left;
+  height: 450px;
+}
+
+.cardright {
+  width: 400px;
+  float: left;
+  height: 450px;
+}
+
+.bottombar {
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+  align-content: center;
+  box-align: center;
+  background-color: #8B8386;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+}
+#loader{
+  border: 8px solid wheat;
+  border-radius: 50%;
+  border-top: 8px solid red;
+  border-bottom: 8px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation:spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  padding: 20px 20px;
+ 
+  
+}
+@-webkit-keyframes spin{
+  0%{ -webkit-transform: rotate(0deg);}
+  100%{ -webkit-transform:rotate(360deg);}
+}
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+/*--------------------------------------------------------------------*/
+#cont{
+  display: none;
+}

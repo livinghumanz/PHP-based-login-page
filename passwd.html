@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="passwd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="passwd.js"></script>
+</head>
+
+<body onload="loadfun()">
+  <div id="loader"></div>
+  <div class="container" id="cont">
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href=#login>Login</a>
+    </div>
+    <!------------------------------ Left start---------------->
+    <div class="leftcolumn">
+      <p> &nbsp;</p>
+    </div>
+    <!------------------------------ Left end Midle start---------------->
+
+    <div class="midlecolumn">
+      <div class="card">
+
+        <br><br>
+        <hr style="color:gray;">
+        <form action="http://localhost/sample/passwd.php" method="POST" name="f1">
+          <div class="cardleft"><br>
+            <center>
+              <p align=right>
+                Name:&nbsp;&nbsp;<br><br>
+                Phone Number:&nbsp;&nbsp;<br><br><br>
+                Password:&nbsp;&nbsp;<br><br><br>
+                Re-Password: &nbsp;&nbsp;
+
+              </p>
+            </center>
+          </div>
+          <div class="cardright" id="cardright"><br>
+            <input type="text" id="nme" name="Name"><br><br>
+            <input type="text" id="pno" name="pno" onkeypress="validate();" onmousemove="validate();"><br><br>
+            <input type="password" id="pwd1" name="passwd1" onkeypress="validate();" onmousemove="validate();"><br><br>
+            <input type="password" id="pwd2" name="passwd2" onkeypress="validate();" onmousemove="validate();">
+            <p id="p1" style="text-align: center; color:red;font-family:'Times New Roman', Times, serif;font-size:16px;font-style:italic;"></p><br><br>
+            &nbsp;<input type="submit" value="submit" id="submit" style="border:none;padding:15px 40px;cursor:pointer;text-align:center;font-size: 16px;text-transform: uppercase;" onmousemove="validate1();">
+
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+    <!-----------------------------Midle end right start-------------------->
+    <div class="rightcolumn">
+      <p> &nbsp;</p>
+    </div>
+    <!-----------------------------------Right end bottom bar start-------------------->
+    <div class="bottombar">
+      <br><br><br>
+      <hr style="color:gray;">
+      <hr>
+      &copy; Living Humanz..!..<br>This content is subject to copyright and the content entered is secured
+      <i style="color:green;" class="fa">&#xf023;</i><br>
+      Submiting and creating your account will automatically accept our <a href="#terms and conditions">terms and condition's</a><br>
+      Submit to accept the policy to get un intrepted services
+      <br><br><br><br>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
